@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop | Проект 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="go">
+        <div class="row">
+            <div class="col-header start">В планах</div>
+            <div class="col-header progress">В процессе</div>
+            <div class="col-header done">Выполнено</div>
+        </div>
+        <div class="row">
+            <div class="placeholder">
+                <div class="item" draggable="true">Моя цель</div>
+            </div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__title">
+                Введите свою цель: 
+            </div>
+            <div class="modal__desc">
+                <label>
+                    Цель:
+                    <input type="text" id="target">
+                </label>
+                <button id="btn">К выполнению</button>
+                <div class="error"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
